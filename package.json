@@ -1,0 +1,17 @@
+{
+  "name": "bt",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "start": "lerna run start"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "lerna": "^3.20.2",
+    "prettier": "1.19.1"
+  }
+}

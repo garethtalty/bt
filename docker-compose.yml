@@ -1,0 +1,16 @@
+version: '3'
+services:
+  aleph-server:
+    build: packages/@aleph/server
+    command: 'node ./bin/www -p 3000'
+    ports:
+      - 9001:3000
+  aleph-client:
+    build: packages/@aleph/client
+    command: node node_modules/serve/bin/serve.js -p 8080 -s ./dist
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 9000:8080
+    depends_on:
+      - aleph-server
