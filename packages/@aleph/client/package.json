@@ -40,6 +40,6 @@
     "serve": "^11.3.0",
     "styled-components": "^5.0.1",
     "styled-theming": "^2.2.0",
-    "swagger-ui-react": "^3.25.0"
+    "swagger-ui-react": "^4.1.3"
   }
 }
